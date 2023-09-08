@@ -22,10 +22,6 @@ function App() {
       <Signin onSigninClick={toggleSignin} />
       <Signup onSignupClick={toggleSignup} />
     </div>
-      {/* <SigninInput />
-      <SignupInput /> */}
-
-      {/* Conditional rendering based on the state */}
       {isSignin ? <SigninInput /> : <SignupInput />}
     </>
   )
