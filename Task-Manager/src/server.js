@@ -6,10 +6,14 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
-// const dbURI = process.env.DB_URL; // Replace with your MongoDB URI
+// const LOGDB = import.meta.VITE_DB_URL; // Replace with your MongoDB URI
+// const LOGDB1 = process.env.VITE_DB_URL;
+// console.log("LOD DB: ", LOGDB);
+// console.log("LOG DB1: ", LOGDB1);  
+// console.log("Import type: ", import.meta.env.VITE_DB_URL);
 const dbURI = "mongodb+srv://sanjayMERNDb:sanjayMERNDb@cluster1.re8rp8u.mongodb.net/TaskManager";
 
-// Middleware for handling JSON requests
+// Middleware for handling JSON requests  
 app.use(express.json());
 
 // Defining routes for authentication (signup and signin routes)
